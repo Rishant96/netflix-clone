@@ -17,7 +17,7 @@ export const Inner = styled.div`
 export const Item = styled.div`
   color: white;
   margin-bottom: 10px;
-  max-width: 800px;
+  max-width: 700px;
   width: 100%;
 
   &:first-of-type {

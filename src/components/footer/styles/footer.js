@@ -6,7 +6,6 @@ export const Container = styled.div`
   margin: auto;
   max-width: 1000px;
   flex-direction: column;
-
   @media (max-width: 1000px) {
     padding: 70px 30px;
   }
@@ -16,26 +15,23 @@ export const Column = styled.div`
   display: flex;
   flex-direction: column;
   text-align: left;
+  width: 25%;
+
+  @media (max-width: 700px) {
+    width: 33%;
+    margin-bottom: 25px;
+  }
 `;
 
 export const Row = styled.div`
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
-  grid-gap: 15px;
-
-  @media (max-width: 1080px) {
-    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-  }
-
-  @media (max-width: 830px) {
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-  }
+  display: flex;
+  flex-wrap: wrap;
 `;
 
 export const Link = styled.a`
   color: #757575;
   margin-bottom: 20px;
-  font-size: 14px;
+  font-size: 13px;
   text-decoration: none;
 `;
 
@@ -51,7 +47,7 @@ export const Text = styled.p`
   margin-bottom: 40px;
 `;
 
-export const Break = styled.p`
+export const Break = styled.div`
   flex-basis: 100%;
   height: 0;
 `;
